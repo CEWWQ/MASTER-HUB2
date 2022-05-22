@@ -471,6 +471,17 @@ end)
 tab:Button("Stylish", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/CEWWQ/stylish/main/Cracked%20by%20me", true))()
 end)
-tab:Button("zombie", function()
+tab:Button("try hard pack of animation", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Exploit-blox/Ninja-Legends/main/ReleaseByBEEST", true))()
+end)
+
+local tab = win:Tab("misc")
+local label = tab:Label("Label", properties) --properties: {["Visible"] = flase}
+label:NewLabel("script", properties)
+tab:Line()
+tab:Button("Rejoin", function()
+game:GetService'TeleportService':TeleportToPlaceInstance(game.PlaceId,game.JobId,game:GetService'Players'.LocalPlayer)
+end)
+tab:Button("ServerHop (COMING SOON)", function()
+
 end)
