@@ -1,0 +1,464 @@
+game.StarterGui:SetCore("SendNotification",  {
+ Title = "FUNIME";
+ Text = "DO NOT USE FLY ITS ONLY FOR untitled hood if u use it u will get ban";
+ Icon = "";
+ Duration = 50;
+})
+
+game.StarterGui:SetCore("SendNotification",  {
+ Title = "FUNIME";
+ Text = "Made By: MASTER#8245";
+ Icon = "";
+ Duration = 10;
+})
+
+game.StarterGui:SetCore("SendNotification",  {
+ Title = "FUNIME";
+ Text = "OBFUSICATOR By: Ghoul#4445";
+ Icon = "";
+ Duration = 10;
+})
+
+Wait(2)
+
+local lib = loadstring(game:HttpGet("https://raw.githubusercontent.com/acsu123/HOHO_H/main/hoho_lib.lua", true))()
+local win = lib:Window("FUNIME","Da Hood",Color3.new(0.333333, 0.666667, 1))
+local tab = win:Tab("menu")
+local label = tab:Label("Label", properties) --properties: {["Visible"] = flase}
+label:NewLabel("script", properties)
+tab:Line()
+tab:Button("fly for untitled hood", function()
+loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\40\39\104\116\116\112\115\58\47\47\103\105\115\116\46\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116\46\99\111\109\47\109\101\111\122\111\110\101\89\84\47\98\102\48\51\55\100\102\102\57\102\48\97\55\48\48\49\55\51\48\52\100\100\100\54\55\102\100\99\100\51\55\48\47\114\97\119\47\101\49\52\101\55\52\102\52\50\53\98\48\54\48\100\102\53\50\51\51\52\51\99\102\51\48\98\55\56\55\48\55\52\101\98\51\99\53\100\50\47\97\114\99\101\117\115\37\50\53\50\48\120\37\50\53\50\48\102\108\121\37\50\53\50\48\50\37\50\53\50\48\111\98\102\108\117\99\97\116\111\114\39\41\44\116\114\117\101\41\41\40\41\10\10")()
+end)
+tab:Button("fly (X)", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/CEWWQ/fly/main/Fly", true))()
+end)
+tab:Button("aim lock", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/CEWWQ/aim-lock/main/Cracked%20by%20XDMASTER", true))()
+end)
+tab:Button("keyboard", function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/manimcool21/Keyboard-FE/main/Protected%20(3).lua'),true))()
+end)
+tab:Button("aim lock for untitled hood", function()
+	loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Hyotinhofofinho/s1mple/main/LIXO"))()
+end)
+tab:Button("Chat Spy", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/CEWWQ/chat-spy/main/Cracked%20by%20me", true))()
+end)
+tab:Button("No Fog", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/CEWWQ/no-fag/main/Cracked%20by%20me", true))()
+end)
+tab:Button("Esp", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/c1HDCdrt", true))()
+end)
+tab:Button("Headless", function()
+game.Players.LocalPlayer.Character.Head.Transparency = 1
+for i,v in pairs(game.Players.LocalPlayer.Character.Head:GetChildren()) do
+if (v:IsA("Decal")) then
+v:Destroy()
+end
+end
+end)
+tab:Button("Korblox", function()
+local ply = game.Players.LocalPlayer
+        local chr = ply.Character
+        chr.RightLowerLeg.MeshId = "902942093"
+        chr.RightLowerLeg.Transparency = "1"
+        chr.RightUpperLeg.MeshId = "http://www.roblox.com/asset/?id=902942096"
+        chr.RightUpperLeg.TextureID = "http://roblox.com/asset/?id=902843398"
+        chr.RightFoot.MeshId = "902942089"
+        chr.RightFoot.Transparency = "1"
+end)
+tab:Button("Shazam Fly [X]", function()
+_G.ShazamFlySpeed = 3
+loadstring(game:HttpGet(("https://raw.githubusercontent.com/Raycodex/Exploiting/main/Roblox/DaHoodShazamFly"), true))()
+end)
+tab:Button("Click Tp [Q]", function()
+plr = game.Players.LocalPlayer
+
+hum = plr.Character.HumanoidRootPart
+
+mouse = plr:GetMouse()
+
+
+
+mouse.KeyDown:connect(function(key)
+
+if key == "q" then
+
+if mouse.Target then
+
+hum.CFrame = CFrame.new(mouse.Hit.x, mouse.Hit.y + 5, mouse.Hit.z)
+
+end
+
+end
+end)
+end)
+tab:Button("reset", function()
+loadstring(game:HttpGet('https://pastebin.com/raw/Zr25UEXi'))()
+end)
+tab:Button("no slow", function()
+loadstring(game:HttpGet('https://pastebin.com/raw/szJUTxPz'))()
+local lplayer = game.Players.LocalPlayer
+
+game:GetService('RunService').Stepped:Connect(function()
+   pcall(function()
+       lplayer.Character.BodyEffects.Movement:ClearAllChildren()
+   end)
+end)
+end)
+tab:Button("unban", function()
+game:GetService("Players").LocalPlayer.Character:WaitForChild("Humanoid").Health = 0
+game:GetService("Players").LocalPlayer.CharacterAdded:Connect(function()
+    Instance.new("Folder",game:GetService("Players").LocalPlayer.Character).Name = ("FULLY_LOADED_CHAR")
+    game:GetService("Players").LocalPlayer.Character:WaitForChild("BodyEffects"):WaitForChild("Dead"):Remove()
+    Instance.new("BoolValue",game:GetService("Players").LocalPlayer.Character:WaitForChild("BodyEffects")).Name = ("Dead")
+    repeat wait() until game:GetService("Players").LocalPlayer.Character:WaitForChild("BodyEffects"):findFirstChild("Dead")
+    game:GetService("Players").LocalPlayer.Character:WaitForChild("Humanoid"):WaitForChild("BodyWidthScale").Value = 0.5
+    game:GetService("Players").LocalPlayer.Character:WaitForChild("Humanoid"):WaitForChild("HeadScale").Value = 1
+    game:GetService("Players").LocalPlayer.Character:WaitForChild("Humanoid"):WaitForChild("BodyHeightScale").Value = 1
+    game:GetService("Players").LocalPlayer.Character:WaitForChild("Humanoid"):WaitForChild("BodyDepthScale").Value = 0.5
+    game:GetService("Players").LocalPlayer.Character:WaitForChild("Humanoid"):WaitForChild("BodyTypeScale").Value = 0.01
+end)
+end)
+
+local tab = win:Tab("auto farm")
+local label = tab:Label("Label", properties) --properties: {["Visible"] = flase}
+label:NewLabel("script", properties)
+tab:Line()
+tab:Toggle("Fist Farm",false, function(state)
+if state then
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Exploit-blox/helloDaHood/main/DaHoodKidW'))()
+else
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Exploit-blox/Da-Hood/main/ProKidEsterAlt'))()
+end
+end)
+
+tab:Toggle("Lettuce Farm",false, function(state)
+if state then
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Exploit-blox/my-fault/main/beest4r'))()
+else
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Exploit-blox/legend-of-speeds/main/Lettuce%20False'))()
+end
+end)
+
+tab:Toggle("Hospital Farm",false, function(state)
+if state then
+loadstring(game:HttpGet('https://pastebin.com/raw/wGU2QCtp'))()
+else
+loadstring(game:HttpGet('https://pastebin.com/raw/kiywMAGC'))()
+end
+end)
+
+tab:Button("Bounty Farm", function()
+Notification:Notify(
+   {Title = "Notification", Description = "Type /start to enable and Type /stop to disable"},
+   {OutlineColor = Color3.fromRGB(80, 80, 80),Time = 5, Type = "default"}
+)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/S9AN/lua-projects/main/stompbot.lua", true))()
+end)
+
+tab:Button("Muscle Farmer", function()
+Notification:Notify(
+   {Title = "Notification", Description = "Press tool to disable"},
+   {OutlineColor = Color3.fromRGB(80, 80, 80),Time = 5, Type = "default"}
+)
+wait(1)
+local TeleportToSafeZone = true; -- If you want to be teleported to a safe zone away from players (true = yes, false = no)
+
+
+----------------------------------- | Don't worry about the rest
+local plr = game.Players.LocalPlayer
+local Part = game:GetService("Workspace").Ignored.Shop["[HeavyWeights] - $250"]
+
+local Working = false
+
+plr.Character.HumanoidRootPart.CFrame = Part.Head.CFrame
+wait(0.5)
+fireclickdetector(Part.ClickDetector)
+wait(1)
+plr.Backpack["[HeavyWeights]"].Parent = plr.Character
+wait(1)
+Working = true
+while Working do
+    if TeleportToSafeZone then
+        plr.Character.HumanoidRootPart.CFrame = CFrame.new(86.081665, -25.2122707, -337.847443)
+    end
+    plr.Character["[HeavyWeights]"]:Activate()
+    wait()
+end
+-- | Antiafk
+local vu = game:GetService("VirtualUser")
+game:GetService("Players").LocalPlayer.Idled:connect(function()
+   vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+   wait(1)
+   vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+end)
+end)
+
+tab:Button("Shoe Farm", function()
+Notification:Notify(
+   {Title = "Notification", Description = "Re-execute to Enable and Disable"},
+   {OutlineColor = Color3.fromRGB(80, 80, 80),Time = 5, Type = "default"}
+)
+wait(0.5)
+getgenv().shoefarm = not getgenv().shoefarm
+
+coroutine.wrap(function()
+   game:GetService("RunService").Stepped:Connect(function()
+       if getgenv().shoefarm then
+           game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+       end
+   end)
+end)()
+
+while getgenv().shoefarm do wait()
+   for i,v in pairs(game.Workspace.Ignored.Drop:GetChildren()) do
+       if v:IsA("MeshPart") then
+           local mag = (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - v.Position).magnitude
+           if mag < 200 then
+               wait(0.1)
+               game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame * CFrame.new(-5,0,0)
+               wait(0.1)
+               fireclickdetector(v.ClickDetector)
+           else
+               game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame * CFrame.new(-5,0,0)
+           end
+       end
+   end
+
+   if game.Workspace.Ignored.Drop:FindFirstChild("MeshPart") == nil then
+       game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace.Ignored["Clean the shoes on the floor and come to me for cash"].HumanoidRootPart.CFrame * CFrame.new(0,-5,0)
+       wait(0.3)
+       fireclickdetector(game.Workspace.Ignored["Clean the shoes on the floor and come to me for cash"].ClickDetector)
+   end
+end
+end)
+tab:Toggle("Spam Call",false, function(state)
+if state then
+getgenv().SpamCall = true
+
+local plrs = game:GetService("Players")
+local phone = game:GetService("ReplicatedStorage").MainEvent
+local RunService = game:GetService("RunService")
+
+if getgenv().SpamCall then
+    local deez = RunService.RenderStepped:Connect(function()
+        if getgenv().SpamCall == false then
+            deez:Disconnect()
+        end
+        for i,v in pairs(plrs:GetPlayers()) do
+            phone:FireServer("PhoneCall", v.Name)
+        end
+    end)
+end
+else
+getgenv().SpamCall = false
+
+local plrs = game:GetService("Players")
+local phone = game:GetService("ReplicatedStorage").MainEvent
+local RunService = game:GetService("RunService")
+
+if getgenv().SpamCall then
+    local deez = RunService.RenderStepped:Connect(function()
+        if getgenv().SpamCall == false then
+            deez:Disconnect()
+        end
+        for i,v in pairs(plrs:GetPlayers()) do
+            phone:FireServer("PhoneCall", v.Name)
+        end
+    end)
+end
+end
+end)
+
+local tab = win:Tab("aimlock")
+local label = tab:Label("Label", properties) --properties: {["Visible"] = flase}
+label:NewLabel("script", properties)
+tab:Line()
+tab:Button("aimbot tool", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/CEWWQ/aim-lock/main/Cracked%20by%20XDMASTER", true))()
+end)
+tab:Button("aim lock for untitled hood", function()
+	loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Hyotinhofofinho/s1mple/main/LIXO"))()
+end)
+tab:Button("Streamable [Q]", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/CEWWQ/aim-lock-q-/main/Cracked%20by%20me", true))()
+end)
+
+tab:Button("aimbot by ghoul", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/GhoulScript/ToolLockV1/main/OpeSource.lua", true))()
+end)
+
+local tab = win:Tab("other script")
+local label = tab:Label("Label", properties) --properties: {["Visible"] = flase}
+label:NewLabel("script", properties)
+tab:Line()
+tab:Button("HOOD SHARK", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/CEWWQ/hood-shark/main/Cracked%20by%20XDMASTER", true))()
+end)
+tab:Button("Fadded", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/NighterEpic/Faded/main/YesEpic", true))()
+end)
+tab:Button("encrypt", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/LPrandom/lua-projects/master/encryptgui.lua"))()
+end)
+
+local tab = win:Tab("fov and more")
+local label = tab:Label("Label", properties) --properties: {["Visible"] = flase}
+label:NewLabel("script", properties)
+tab:Line()
+tab:Dropdown("Fov",{"10","20","30","40","50","60","70","80","90","100","110","120"}, function(SelectedLocation)
+	if SelectedLocation == "10" then
+Workspace.CurrentCamera.FieldOfView = 10
+elseif SelectedLocation == "20" then
+Workspace.CurrentCamera.FieldOfView = 20
+elseif SelectedLocation == "30" then
+Workspace.CurrentCamera.FieldOfView = 30
+elseif SelectedLocation == "40" then
+Workspace.CurrentCamera.FieldOfView = 40
+elseif SelectedLocation == "50" then
+Workspace.CurrentCamera.FieldOfView = 50
+elseif SelectedLocation == "60" then
+Workspace.CurrentCamera.FieldOfView = 60
+elseif SelectedLocation == "70" then
+Workspace.CurrentCamera.FieldOfView = 70
+elseif SelectedLocation == "80" then
+Workspace.CurrentCamera.FieldOfView = 80
+elseif SelectedLocation == "90" then
+Workspace.CurrentCamera.FieldOfView = 90
+elseif SelectedLocation == "100" then
+Workspace.CurrentCamera.FieldOfView = 100
+elseif SelectedLocation == "110" then
+Workspace.CurrentCamera.FieldOfView = 110
+elseif SelectedLocation == "120" then
+Workspace.CurrentCamera.FieldOfView = 120
+end
+end)
+tab:Dropdown("Hitbox",{"1","5","10","15","20","25","30"}, function(SelectedLocation)
+if SelectedLocation == "1" then
+loadstring(game:HttpGet('https://pastebin.com/raw/mDxpbwjh'))()
+elseif SelectedLocation == "5" then
+loadstring(game:HttpGet('https://pastebin.com/raw/6B3Z4mHn'))()
+elseif SelectedLocation == "10" then
+loadstring(game:HttpGet('https://pastebin.com/raw/A0G1bRTC'))()
+elseif SelectedLocation == "15" then
+loadstring(game:HttpGet('https://pastebin.com/raw/56Z5nfvd'))()
+elseif SelectedLocation == "20" then
+loadstring(game:HttpGet('https://pastebin.com/raw/KAN161u8'))()
+elseif SelectedLocation == "25" then
+loadstring(game:HttpGet('https://pastebin.com/raw/6U8TtuJ4'))()
+elseif SelectedLocation == "30" then
+loadstring(game:HttpGet('https://pastebin.com/raw/qq6bxrPU'))()
+end
+end)
+tab:Dropdown("Reach",{"Bat","Knife","StopSign","Pitchfork"}, function(SelectedLocation)
+if SelectedLocation == "Bat" then
+game.Players.LocalPlayer.Backpack["[Bat]"].Handle.Size = Vector3.new(50, 50, 50)
+elseif SelectedLocation == "Knife" then
+game.Players.LocalPlayer.Backpack["[Knife]"].Handle.Size = Vector3.new(50, 50, 50)
+elseif SelectedLocation == "StopSign" then
+game.Players.LocalPlayer.Backpack["[StopSign]"].Handle.Size = Vector3.new(50, 50, 50)
+elseif SelectedLocation == "Pitchfork" then
+game.Players.LocalPlayer.Backpack["[Pitchfork]"].Handle.Size = Vector3.new(50, 50, 50)
+end
+end)
+tab:Button("120", function()
+ game.Workspace.CurrentCamera.FieldOfView = 120
+end)
+tab:Button("100", function()
+ game.Workspace.CurrentCamera.FieldOfView = 100
+end)
+tab:Button("90", function()
+ game.Workspace.CurrentCamera.FieldOfView = 90
+end)
+tab:Button("80", function()
+ game.Workspace.CurrentCamera.FieldOfView = 80
+end)
+tab:Button("70", function()
+ game.Workspace.CurrentCamera.FieldOfView = 70
+end)
+
+local tab = win:Tab("selling tool")
+local label = tab:Label("Label", properties) --properties: {["Visible"] = flase}
+label:NewLabel("script", properties)
+tab:Line()
+tab:Button("swag crash", function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/lerkermer/lua-projects/master/SuperCustomServerCrasher'))()
+end)
+tab:Button("encrypt crash", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/LPrandom/lua-projects/master/dhcquickcrash.lua"))()
+end)
+tab:Button("auto drop", function()
+	loadstring(game:HttpGet(("https://raw.githubusercontent.com/Raycodex/Exploiting/main/Roblox/Da%20Hood%20Auto%20Cash%20Drop"), true))()
+end)
+
+local tab = win:Tab("fps boost")
+local label = tab:Label("Label", properties) --properties: {["Visible"] = flase}
+label:NewLabel("script", properties)
+tab:Line()
+tab:Button("fps boost", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/CEWWQ/fps-boost/main/Cracked%20by%20XDMASTER", true))()
+end)
+
+local tab = win:Tab("teleport da hood")
+local label = tab:Label("Label", properties) --properties: {["Visible"] = flase}
+label:NewLabel("script", properties)
+tab:Line()
+tab:Button("Club", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-264.688, 48.4979, -464.715)
+end)
+
+tab:Button("Shop", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-210.014, 21.7262, -822.8)
+end)
+
+tab:Button("casino", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-904.107, 21.2262, -175.944)
+end)
+
+tab:Button("Bank", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-424, 23, -284)
+end)
+
+tab:Button("Admin", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-871, -38.428, -589)
+end)
+
+tab:Button("Subway 1", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-422, -2, -33)
+end)
+
+tab:Button("Subway 2", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(598, 47, -114)
+end)
+
+local tab = win:Tab("Animation(FE)")
+local label = tab:Label("Label", properties) --properties: {["Visible"] = flase}
+label:NewLabel("script", properties)
+tab:Line()
+tab:Button("Ninja", function()
+loadstring(game:HttpGet('https://pastebin.com/raw/3us2GAp7'))()
+end)
+tab:Button("Cartoony", function()
+loadstring(game:HttpGet('https://pastebin.com/raw/amVNDcQT'))()
+end)
+tab:Button("Toy", function()
+loadstring(game:HttpGet('https://pastebin.com/raw/zSNMgiuG'))()
+end)
+tab:Button("Bubble", function()
+loadstring(game:HttpGet('https://pastebin.com/raw/WgetAbi5'))()
+end)
+tab:Button("Levitation", function()
+loadstring(game:HttpGet('https://pastebin.com/raw/AryTwN4z'))()
+end)
+tab:Button("Vampire", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/CEWWQ/vampire/main/Cracked%20by%20me", true))()
+end)
+tab:Button("Stylish", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/CEWWQ/stylish/main/Cracked%20by%20me", true))()
+end)
+tab:Button("zombie", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Exploit-blox/Ninja-Legends/main/ReleaseByBEEST", true))()
+end)
