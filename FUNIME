@@ -2,7 +2,7 @@ game.StarterGui:SetCore("SendNotification",  {
  Title = "FUNIME";
  Text = "DO NOT USE FLY ITS ONLY FOR untitled hood if u use it u will get ban";
  Icon = "";
- Duration = 50;
+ Duration = 30;
 })
 
 game.StarterGui:SetCore("SendNotification",  {
@@ -24,13 +24,15 @@ Wait(2)
 local lib = loadstring(game:HttpGet("https://raw.githubusercontent.com/acsu123/HOHO_H/main/hoho_lib.lua", true))()
 local win = lib:Window("FUNIME","Da Hood",Color3.new(0.333333, 0.666667, 1))
 local tab = win:Tab("Credits")
-tab:Label("Made By MASTER#8245")
-tab:Label("Made By Ghoul#4445")
-tab:Label("            ")
-tab:Label("script by MASTER#8245")
-tab:Label("script by Ghoul#4444")
-tab:Label("            ")
-tab:Label("Notification By ghoul#4445")
+tab:Label("Made By")
+tab:Label("MASTER#8245")
+tab:Label("Ghoul#4445")
+tab:Label("Script By")
+tab:Label("MASTER#8245")
+tab:Label("Ghoul#4444")
+tab:Label("Notification By")
+tab:Label("ghoul#4445")
+tab:Label("MASTER#8245")
 
 local tab = win:Tab("menu")
 local label = tab:Label("Label", properties) --properties: {["Visible"] = flase}
